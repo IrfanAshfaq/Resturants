@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (max-width:926px)" href="css/phonestyle.css">
+    <title>Irfan Resturant</title>
+    <style>
+                * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+
+        body {
+            /* overflow: hidden; */
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hero section  */
+        #hero {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            display: flex;
+
+        }
+
+        #hero::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            background-image: url(image/newbackground.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            z-index: -1;
+            opacity: 80%;
+
+        }
+
+        /* hero content section  */
+
+        #hero-content {
+            position: absolute;
+        }
+
+        #hero-content h1 {
+            color: #fff;
+
+        }
+
+        #hero-content h2 {
+            color: #fff;
+            margin-top: 30px;
+            margin-bottom: 46px;
+            font-size: 23px;
+        }
+
+        #hero-content a {
+            color: #fff;
+            border: 2px solid gray;
+            padding: 5px 18px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        #hero-content a:hover {
+            background-color: blue;
+            border-radius: 10px;
+        }
+
+        /* Header section */
+        #header {
+            position: fixed;
+            top: 0px;
+            width: 100vw;
+            height: 70px;
+            line-height: 70px;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: .4;
+
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        #navbar h1 {
+            text-shadow: 2px 2px #fff;
+
+        }
+
+        #header h1 {
+            color: orange;
+            font-size: 2.1rem;
+            font-family: cursive;
+        }
+
+        #header ul {
+            display: flex;
+        }
+
+        #header li {
+            list-style: none;
+        }
+
+        #header li a {
+            text-decoration: none;
+            padding: 1px 20px;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        #header li a:hover,
+        #phone a:hover {
+            background-color: blue;
+            border-radius: 15px;
+        }
+
+        #phone a {
+            text-decoration: none;
+            border: 2px solid salmon;
+            font-size: 1.5rem;
+            color: #fff;
+            padding: 0px 12px;
+            border-radius: 23px;
+        }
+
+        /* Menu Section  */
+        #menu {
+            padding: 25px 0px 25px 0px;
+        }
+
+        #section {
+            padding: 25px 0px 25px 0px;
+            text-align: center;
+        }
+
+        #menu-row {
+            display: flex;
+            padding: 25px 57px;
+        }
+
+        #menu-col {
+            border: 2px solid gray;
+            box-shadow: 2px 2px gray;
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            flex: 1;
+        }
+
+        #menu-col h2 {
+            text-align: center;
+            background-color: red;
+            color: white;
+        }
+
+        #image {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            padding: 5px;
+            border: 1px solid orange;
+        }
+
+        #image img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            margin: 5px;
+        }
+/* Chef section */
+#chef{
+padding: 35px 0px;
+margin: 15px;
+}
+#row{
+    display: flex;
+    justify-content: center;
+}
+#row-col{
+    text-align: center;
+}
+img{
+width: 200px;    
+height: 250px;
+margin: auto;
+}
+/* Footer section  */
+footer{
+    background-color: black;
+    color: wheat;
+    text-align: center;
+    text-decoration: none;
+}
+    </style>
+</head>
+
+<body>
+    <div id="hero">
+        <div id="hero-content">
+            <h1>Irfan Resturant</h1>
+            <h2>Best Quality and Testy Food Point</h2>
+            <a href="">Manu</a>
+        </div>
+    </div>
+    <nav id="header">
+        <div id="navbar">
+            <h1>Irfan Resturant</h1>
+            <ul>
+                <li><a href="https://www.mozilla.org/en-US/firefox/all/#product-desktop-release">Home</a></li>
+                <li><a href="#">Manu</a></li>
+                <li><a href="#">Chef</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div id="phone">
+                <a href="#">230948408</a>
+            </div>
+        </div>
+    </nav>
+    <div id="menu">
+        <h1 id="section">Menu</h1>
+        <div id="menu-row">
+            <div id="menu-col">
+                <h2>BreakFast</h2>
+                <div class="box">
+                    <div id="image">
+                        <img src="image/breakfast1.jpg">
+                    </div>
+                    <div>
+                        <h3>Testy Desh.01 </h3>
+                        <h4>Rs.10$</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="image/breakfast2.jpg">
+                    </div>
+                    <div>
+                        <h3>Testy Desh.01 </h3>
+                        <h4>Rs.10$</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="image/breakfast3.jpg">
+                    </div>
+                    <div>
+                        <h3>Testy Desh.01 </h3>
+                        <h4>Rs.10$</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="menu-col">
+                <h2>Dinner</h2>
+                <div class="box">
+                    <div id="image">
+                        <img src="image/dinner1.jpg">
+                    </div>
+                    <div>
+                        <h3>Testy Desh.01 </h3>
+                        <h4>Rs.10$</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="image/dinner2.jpg">
+                    </div>
+                    <div>
+                        <h3>Testy Desh.01 </h3>
+                        <h4>Rs.10$</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="image/dinner3.jpg">
+                    </div>
+                    <div>
+                        <h3>Testy Desh.01 </h3>
+                        <h4>Rs.10$</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="menu-col">
+                <h2>Lunch</h2>
+                <div class="box">
+                    <div id="image">
+                        <img src="image/lunch1.jpg">
+                    </div>
+                    <div>
+                        <h3>Testy Desh.01 </h3>
+                        <h4>Rs.10$</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="image/lunch2.jpg">
+                    </div>
+                    <div>
+                        <h3>Testy Desh.01 </h3>
+                        <h4>Rs.10$</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div id="image">
+                        <img src="image/lunch3.jpg">
+                    </div>
+                    <div>
+                        <h3>Testy Desh.01 </h3>
+                        <h4>Rs.10$</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="chef">
+        <div id="section">
+            <h1>Chef</h1>
+        </div>
+        <div id="row">
+            <div id="row-col">
+                <div id="img">
+                    <img src="image/1.png" alt="">
+                   <div>
+                    <h4>Irfan Ashfaq</h4>
+                   </div>
+                </div>
+            </div>
+            <div id="row-col">
+                <div id="img">
+                    <img src="image/2.png" alt="">
+                   <div>
+                    <h4>Irfan Ashfaq</h4>
+                   </div>
+                </div>
+            </div>
+            <div id="row-col">
+                <div id="img">
+                    <img src="image/3.png" alt="">
+                   <div>
+                    <h4>Irfan Ashfaq</h4>
+                   </div>
+                </div>
+            </div>
+            <div id="row-col">
+                <div id="img">
+                    <img src="image/4.png" alt="">
+                   <div>
+                    <h4>Irfan Ashfaq</h4>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer><h2>Enjoy the IrfanResturan.com</h2></footer>
+</body>
+
+</html>
+<!-- The end -->

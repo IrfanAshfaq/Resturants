@@ -1,0 +1,73 @@
+#navbar {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#hero {
+    height: 100vh;
+}
+#hero-content h1 {
+    font-size: 40px;
+}
+
+#hero-content h2 {
+    font-size: 34;
+    margin-top: 34px;
+    margin-bottom: 40px;
+}
+#hero-content a {
+    padding: 4px 24px;
+    border-radius: 26px;
+    font-size: 24px;
+}
+#hero-content a:hover {
+    background-color: blue;
+    border-radius: 10px;
+}
+#header {
+   
+    top: 13px;
+    width: 100vw;
+    height: 40px;
+    line-height: 35px;
+    
+}
+#header h1 {
+    font-size: 2.1rem;
+    margin-bottom: 14px;
+}
+#phone a {
+    font-size: 19px;
+    padding: 0px 22px;
+    background-color: gray;
+}
+#header ul{
+    
+    background-color: rgb(218, 74, 98);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+#header li a {
+    padding: 1px 3px;
+    font-size: 18px;
+}
+#header li a:hover{
+    background-color:blue ;
+    border-radius: 15px;
+ }
+ #menu-row{
+    flex-direction: column;
+ }
+ #menu-col {
+   
+    margin: 5px;
+    padding: 0px;
+}
+ /* Chef section  */
+ #row{
+    flex-direction: column;
+ }
